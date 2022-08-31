@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Restaurant Layout</title>
+    <!-- fontawesome.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div id="listContainer">
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Order Now</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+            <div class="navContainer">
+                <h1>WELCOME TO OUR CUISINE RESTAURANT</h1>
+                <!-- Search Bar -->
+                <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+                    <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-6" viewBox="0 0 40 40">
+                      <path d="M28.295 32.517c-2.93 2.086-6.51 3.312-10.38 3.312C8.02 35.83 0 27.81 0 17.914 0 8.02 8.02 0 17.915 0 27.81 0 35.83 8.02 35.83 17.915c0 3.87-1.227 7.45-3.313 10.38l6.61 6.61c1.166 1.165 1.163 3.057 0 4.22-1.167 1.167-3.057 1.167-4.226-.002l-6.605-6.606zm-10.38.326c8.245 0 14.928-6.683 14.928-14.928 0-8.245-6.683-14.93-14.928-14.93-8.245 0-14.93 6.685-14.93 14.93 0 8.245 6.685 14.928 14.93 14.928zm0-26.573c-6.43 0-11.645 5.214-11.645 11.645 0 .494.4.895.896.895.495 0 .896-.4.896-.895 0-5.442 4.41-9.853 9.853-9.853.494 0 .895-.4.895-.896 0-.495-.4-.896-.895-.896z"
+                      fill-rule="evenodd" />
+                    </symbol>
+                    <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-5" viewBox="0 0 20 20">
+                      <path d="M10 20c5.523 0 10-4.477 10-10S15.523 0 10 0 0 4.477 0 10s4.477 10 10 10zm1.35-10.123l3.567 3.568-1.225 1.226-3.57-3.568-3.567 3.57-1.226-1.227 3.568-3.568-3.57-3.57 1.227-1.224 3.568 3.568 3.57-3.567 1.224 1.225-3.568 3.57zM10 18.272c4.568 0 8.272-3.704 8.272-8.272S14.568 1.728 10 1.728 1.728 5.432 1.728 10 5.432 18.272 10 18.272z"
+                      fill-rule="evenodd" />
+                    </symbol>
+                  </svg>
+                  
+                  <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-custom">
+                    <div role="search" class="sbx-custom__wrapper">
+                      <input type="search" name="search" placeholder="Search Location" autocomplete="off" required="required" class="sbx-custom__input">
+                      <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+                        <svg role="img" aria-label="Search">
+                          <use xlink:href="#sbx-icon-search-6"></use>
+                        </svg>
+                      </button>
+                      <button type="reset" title="Clear the search query." class="sbx-custom__reset">
+                        <svg role="img" aria-label="Reset">
+                          <use xlink:href="#sbx-icon-clear-5"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </form>
+                  <script type="text/javascript">
+                    document.querySelector('.searchbox [type="reset"]').addEventListener('click', function() {  this.parentNode.querySelector('input').focus();});
+                  </script>
+                  <!-- SearchBar End -->
+                  <div id="socials">
+                    <ul>
+                        <li><i class="fa-brands fa-facebook"></i>55k</li>
+                        <li><i class="fa-brands fa-twitter"></i>13.8k</li>
+                        <li><i class="fa-brands fa-instagram"></i>  130k</li>
+                    </ul>
+                </div>
+            </div>
+    </header>
+
+    <main>
+        <div id="aboutUs">
+          <div id="aboutUsChild">
+            <span>About us</span>
+            <h2>Discover Our<br>Restaurant Story</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates unde, exercitationem ab adipisci dolorem dicta, culpa neque nisi laborum ducimus doloremque reprehenderit officia officiis harum reiciendis praesentium, provident quibusdam sed eligendi alias? Eveniet eaque porro id exercitationem commodi suscipit nihil. harum reiciendis praesentium, provident quibusdam sed eligendi alias? Eveniet eaque porro id exercitationem commodi suscipit nihil.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio delectus odit reiciendis sequi amet a numquam harum reiciendis praesentium, provident quibusdam sed eligendi alias? Eveniet eaque porro id exercitationem commodi suscipit nihil. Temporibus, qui! Sunt, vero?</p>
+            <button>Discover Menu</button>
+          </div>
+        </div>
+        <div id="orderOnline">
+            <span>Order Online Now</span>
+            <h2>Our Specialty Cuisine</h2>
+            <ul>
+              <li>Breakfast</li>
+              <li>Lunch</li>
+              <li>Dinner</li>
+              <li>Dessert</li>
+            </ul>
+            <div id="foodPicsContainer">
+              <div id="foodPics">
+                <img src="http://placekitten.com/225/275" alt="">
+                <img src="http://placekitten.com/225/275"" alt="">
+                <img src="http://placekitten.com/225/275"" alt="">
+                <img src="http://placekitten.com/225/275"" alt="">
+              </div>
+              <div id="foodPics2">
+                <img src="http://placekitten.com/225/275" alt="">
+                <img src="http://placekitten.com/225/275"" alt="">
+                <img src="http://placekitten.com/225/275"" alt="">
+                <img src="http://placekitten.com/225/275"" alt="">
+              </div>
+            </div>
+        </div>
+        <div id="contact">
+          <span class="contactTitle">Book Table</span>
+          <H2 id="hours">Opening Hours</H2>
+          <i class="fa-solid fa-phone"></i>
+          <span>Call Now</span>
+          <span>+12345678910</span>
+          <div id="gridHours">
+            <div id="hours1">
+              <span>Monday to Tuesday</span>
+              <h3>09:00 am - 22:00pm</h3>
+            </div>
+            <div id="hours2">
+              <span>Friday to Sunday</span>
+              <h3>11:00 am - 20:00pm</h3>
+            </div>
+          </div>
+          <video autoplay controls>
+            <source src="css/video.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div id="testimonials">
+          <span id="testTitle">Testimonials</span>
+          <H4>Customers Say</H4>
+          <img src="css/alexander-hipp-iEEBWgY_6lA-unsplash.jpg" alt="Heashot">
+          <span>Mr. John Smith</span>
+          <span>Art Director</span>
+          <div id="reviewStars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic esse dicta doloribus debitis dolor totam exercitationem necessitatibus sapiente molestias amet, possimus laboriosam odio, praesentium rem voluptatem numquam doloremque quibusdam adipisci nesciunt.</p>
+        </div>
+    </main>
+    <section id="footer">
+      <footer id="footerChild">
+        <div id="div1">
+          <img src="#" alt="logo">
+          <h6>Just like a perfectly baked pastry, we created Cuisine with special love and it shows.</h6>
+        </div>
+        <div id="div2">
+          <h4>Open Hours</h4>
+          <span>Mon-Fri: 9 AM - 6 PM</span>
+          <span>Saturday: 9 AM - 4 PM</span>
+          <span>Sunday: Closed</span>
+        </div>
+        <div id="div3">
+          <span>Contact Us</span>
+          <span>176 W street name, New York, NY 10014</span>
+          <span>E-mail: info@yoursite.com</span>
+          <span>Telephone: +1(800)123-4567</span>
+        </div>
+        <div id="div4">
+          <span>Subscribe Newsletter</span>
+          <input type="email" name="" id="">
+        </div>
+        <div id="footer1">
+          <span>footer 1</span>
+        </div>
+        <div id="footer2">
+          <span>footer 2</span>
+        </div>
+      </footer>
+  
+    </section>
+</body>
+</html>
